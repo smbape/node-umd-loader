@@ -15,6 +15,7 @@ deps = [
         node: "lodash" // use lodash in node
     },
     {
+        // I hope you guessed
         amd: "jquery",
         common: "jquery",
         brunch: "!jQuery",
@@ -22,7 +23,7 @@ deps = [
     },
     {
         node: "fs"
-        // ignore other environment
+        // ignore other environments
     }
 ];
 
