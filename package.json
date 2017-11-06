@@ -1,6 +1,6 @@
 {
   "name": "umd-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Universal module loader",
   "authors": [
     "Stéphane MBAPE <smbape@yahoo.fr>"
