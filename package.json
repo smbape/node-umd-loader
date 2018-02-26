@@ -1,49 +1,40 @@
 {
-  "_id": "umd-loader@0.0.3",
-  "_inBundle": true,
-  "_location": "/umd-builder/umd-loader",
-  "_phantomChildren": {},
-  "_requiredBy": [
-    "/umd-builder"
-  ],
-  "author": "",
+  "name": "umd-loader",
+  "version": "0.0.4",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "description": "Universal module loader",
   "authors": [
     "Stéphane MBAPE <smbape@yahoo.fr>"
   ],
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm run test",
+    "test": "node node_modules/mocha/bin/_mocha --full-trace --require coffeescript/register --require test/common.coffee \"test/*-test.js\""
+  },
   "bugs": {
     "url": "https://github.com/smbape/node-umd-loader/issues"
   },
+  "homepage": "https://github.com/smbape/node-umd-loader",
+  "keywords": [],
+  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-strict-mode": "^6.24.1",
-    "babel-template": "^6.26.0"
+    "babel-template": "^6.26.0",
+    "transform-modules-eumd": "^0.0.1"
   },
-  "description": "Universal module loader",
   "devDependencies": {
     "anyspawn": "^1.1.1",
     "async": "^2.6.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "transform-modules-eumd": "^0.0.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "chai": "^4.1.2",
     "coffeescript": "^2.2.1",
     "eslint": "^4.17.0",
     "lodash": "^4.17.5",
     "mocha": "^5.0.1"
-  },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "gitHead": "3d5051e1abb116a2560aa86cce9144c62a32fdd4",
-  "homepage": "https://github.com/smbape/node-umd-loader",
-  "keywords": [],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "umd-loader",
-  "scripts": {
-    "prepublishOnly": "npm run test",
-    "test": "node node_modules/mocha/bin/_mocha --full-trace --require coffeescript/register --require test/common.coffee \"test/*-test.js\""
-  },
-  "version": "0.0.4"
+  }
 }
