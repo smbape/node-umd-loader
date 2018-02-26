@@ -45,5 +45,5 @@
     "prepublishOnly": "npm run test",
     "test": "node node_modules/mocha/bin/_mocha --full-trace --require coffeescript/register --require test/common.coffee \"test/*-test.js\""
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
