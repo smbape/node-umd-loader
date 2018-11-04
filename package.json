@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "prepublishOnly": "npm run test",
-    "test": "node node_modules/mocha/bin/_mocha --full-trace --require coffeescript/register --require test/common.coffee \"test/*-test.js\""
+    "test": "node node_modules/mocha/bin/_mocha --full-trace --require coffeescript/register --require test/common.coffee \"test/*-test.*\""
   },
   "bugs": {
     "url": "https://github.com/smbape/node-umd-loader/issues"
